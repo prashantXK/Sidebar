@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.mainbox{
+    background: url(./image/wp8778435-dark-code-wallpapers.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.btn1 i{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.3s linear;
+}
+.sidebarmenu{
+    position: fixed;
+ 
+  left: -300px;
+  height: 100vh;
+width: 265px;
+background-color: rgba(255, 255, 255, 0.1);
+box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+transition: all 0.3s linear;
+}
+.sidebarmenu .logo{
+position: absolute;
+width: 100%;
+line-height: 60px;
+box-shadow: 0 2px 3px rgba(255, 255, 255, 0.5);
+height: 55px;
+}
+
+.sidebarmenu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.sidebarmenu .btn2 i{
+    color: grey;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    left: 235px;
+    line-height: 60px;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.sidebarmenu .menu{
+color: white;
+position: absolute;
+width: 100%;
+top: 80px;
+}
+
+.sidebarmenu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.sidebarmenu menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sidebarmenu .menu i{
+    padding-right: 8px;
+}
+
+.sidebarmenu .socialmedia{
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    left: 25%;
+    bottom:20px;
+}
+.sidebarmenu .socialmedia i{
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+
+#check{
+    display: none;
+}
+
+.sidebarmenu .menu li:hover{
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.btn1 i:hover{
+    font-size: 35px;
+   cursor: pointer;
+ 
+}
+.btn2 i:hover{
+    font-size: 20px;
+
+}
+.sidebarmenu .socialmedia i:hover{
+opacity: 1;
+transform: scale(1.1);
+}
+#check:checked ~ .sidebarmenu{
+    left: 0;
+}
+
+#check:checked ~ .btn1 i{
+    opacity: 0;
+}
